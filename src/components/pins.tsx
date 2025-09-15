@@ -34,7 +34,7 @@ export function Pins() {
 						<PinCard key={pin.id} pin={pin} />
 					))}
 					{isLoading && <LoadingSkeletonCards />}
-					{isEmpty && <Empty />}
+					{!isLoading && isEmpty && <Empty />}
 				</Box>
 			</Box>
 		</Box>
