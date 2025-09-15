@@ -156,10 +156,6 @@ export const PinForm = () => {
 		navigate(AppRoutes.Map);
 	}
 
-	// useEffect(() => {
-	// 	handleResetActiveStep();
-	// }, []);
-
 	return (
 		<Box>
 			<FormProvider {...methods}>

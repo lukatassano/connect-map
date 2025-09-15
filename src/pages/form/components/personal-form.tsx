@@ -17,7 +17,7 @@ export function PersonalForm() {
 				render={({ field, fieldState }) => (
 					<TextField
 						{...field}
-						label={t("personalData.email")}
+						label={t("personalData.name")}
 						variant="outlined"
 						error={!!fieldState.error}
 						helperText={fieldState?.error?.message}
