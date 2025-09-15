@@ -6,16 +6,16 @@ export const favoritePinsAtom = atomWithStorage<PinType[]>("favorite-pins", []);
 
 export const addOrRemoveFavoritePinAtom = atom(
 	null,
-	(get, set, nurse: PinType) => {
+	(get, set, pin: PinType) => {
 		const currentValue = get(favoritePinsAtom);
-		const index = currentValue.findIndex(({ id }) => nurse.id === id);
+		const index = currentValue.findIndex(({ id }) => pin.id === id);
 
 		if (index > -1) {
 			const updatedValue = [...currentValue];
 			updatedValue.splice(index, 1);
 			set(favoritePinsAtom, updatedValue);
 		} else {
-			set(favoritePinsAtom, [...currentValue, nurse]);
+			set(favoritePinsAtom, [...currentValue, pin]);
 		}
 	},
 );

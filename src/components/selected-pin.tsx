@@ -24,7 +24,7 @@ import { formatAddress, formatGoogleMapsAddress } from "../utils/address.utils";
 import { openMaps } from "../utils/google-maps.utils";
 import { phoneCall } from "../utils/phone-call.utils";
 import { openWhatsApp } from "../utils/whatsapp.utils";
-import { SelectedNurseBox } from "./styles";
+import { SelectedPinBox } from "./styles";
 
 export function SelectedPin() {
 	const translate = useTranslation();
@@ -182,12 +182,7 @@ export function SelectedPin() {
 			</DialogContent>
 
 			<DialogActions sx={{ m: 1 }}>
-				<SelectedNurseBox
-					display="flex"
-					gap={1}
-					flex={1}
-					flexDirection="column"
-				>
+				<SelectedPinBox display="flex" gap={1} flex={1} flexDirection="column">
 					<Tooltip title={translate("selectedPin.callTooltip")} arrow>
 						<Button
 							sx={{ px: 3 }}
@@ -224,7 +219,7 @@ export function SelectedPin() {
 							{translate("selectedPin.maps")}
 						</Button>
 					</Tooltip>
-				</SelectedNurseBox>
+				</SelectedPinBox>
 			</DialogActions>
 		</Dialog>
 	);

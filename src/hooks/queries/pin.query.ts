@@ -40,9 +40,9 @@ export function usePinsQuery({
 	});
 }
 
-type NurseQueryProps = { id?: number } & QueryConfig;
+type PinQueryProps = { id?: number } & QueryConfig;
 
-export function usePinQuery({ id, ...props }: NurseQueryProps) {
+export function usePinQuery({ id, ...props }: PinQueryProps) {
 	const condition = isNumber(id);
 
 	return useQuery<PinType>(`/pin/${id}`, {

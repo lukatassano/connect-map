@@ -47,8 +47,8 @@ const translations: TranslationType = {
 		whatsapp: "Whatsapp",
 		maps: "Maps",
 		loading: "Carregando",
-		callTooltip: "Ligar para o enfermeiro",
-		whatsappTooltip: "Chamar enfermeiro no Whatsapp",
+		callTooltip: "Ligar",
+		whatsappTooltip: "Chamar no Whatsapp",
 		mapsTooltip: "Abrir endereço no Maps",
 	},
 };

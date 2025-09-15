@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [react()],
-	base: "/connect-map",
+	base: "/connect-map/",
 	build: {
 		assetsDir: ".",
 		outDir: "dist",

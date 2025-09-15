@@ -45,8 +45,8 @@ const translations = {
 		whatsapp: "Whatsapp",
 		maps: "Maps",
 		loading: "Loading",
-		callTooltip: "Call the nurse",
-		whatsappTooltip: "Message nurse on Whatsapp",
+		callTooltip: "Call",
+		whatsappTooltip: "Message on Whatsapp",
 		mapsTooltip: "Open address in Maps",
 	},
 };
